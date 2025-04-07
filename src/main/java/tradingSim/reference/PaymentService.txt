@@ -1,0 +1,5 @@
+package tradingSim.reference;
+
+public interface PaymentService {
+    void processpayment(double amount);
+}

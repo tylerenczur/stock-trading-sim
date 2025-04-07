@@ -1,0 +1,10 @@
+package tradingSim.reference;
+import org.springframework.stereotype.Service;
+
+@Service
+public class StripePaymentService implements PaymentService {
+    @Override
+    public void processpayment(double amount) {
+        System.out.printf("STRIPE\nAmount: %.2f", amount);
+    }
+}
